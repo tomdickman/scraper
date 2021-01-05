@@ -9,6 +9,7 @@
   "author": "Tom Dickman",
   "license": "MIT",
   "dependencies": {
+    "aws-lambda-ric": "^1.0.0",
     "puppeteer": "^5.5.0"
   },
   "devDependencies": {
