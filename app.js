@@ -21,16 +21,16 @@ exports.lambdaHandler = async (event, context) => {
             await browser.close()
     
             return {
-                'statusCode': 200,
-                'body': content
+                "statusCode": 200,
+                "body": JSON.stringify(content)
             }
         } catch(error) {
             console.log(error)
         }
     } else {
         return {
-            'statusCode': 400,
-            'body': 'No valid URL provided'
+            "statusCode": 400,
+            "body": "No valid URL provided"
         }
     }
 }
